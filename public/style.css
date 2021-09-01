@@ -1,0 +1,20 @@
+.btn{
+    display: block;
+    margin: .5rem;
+}
+.card{
+    margin:1rem;
+}
+
+.dashboard-card{
+border: black dotted 1px;
+}
+.posts,.comment{
+border: solid 1px gray;
+border-radius: .25rem;
+padding: 0;
+}
+
+.blog-form{
+    margin:.5rem 0;
+}

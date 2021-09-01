@@ -1,0 +1,23 @@
+<div class="posts">
+{{#each blogs as |blog|}}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+         User:{{user.name}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <p class="card-text">{{blog.content}}</p>
+          <div>
+            <textarea placeholder="Comment" id='commentBody'></textarea>
+            <button class="btn  btnComment" data-blog="{{blog.id}}">post Comment</button>
+          <button class="btn displayComment" data-comment="{{blog.id}}">Comments</button>
+          </div>
+        </div>
+        
+      </div>
+</div>
+{{/each}}
+</div>
+
+{{!-- <script src=""></script> --}}

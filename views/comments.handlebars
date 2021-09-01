@@ -1,0 +1,12 @@
+
+<div class="container">
+    <h2 class=" row comment justify-content-center">comments:</h2>
+    {{#each comments as |comment|}}
+    <div class="row comment">
+        <div class="col-12 col-md-12">
+            <div><h2>user:{{user.name}}</h2></div>
+            <p>comment:{{comment.comment_body}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

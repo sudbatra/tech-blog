@@ -1,0 +1,26 @@
+<div class="card dashboard-card" style="width: 18rem;">
+
+  <h5 class="card-header">Username|{{userInfo.name}}</h5>
+  <div class="card-body">
+
+    <p class="card-text">Email:{{userInfo.email}}</p>
+  </div>
+</div>
+
+<div class="container posts">
+  <h1 class="card-header">My Posts:</h1>
+  {{#each blogs as |blog|}}
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        Post ID:{{blog.id}}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{blog.title}}</h5>
+        <p class="card-text">{{blog.content}}</p>
+        <button class="btn delete-btn" data-id="{{blog.id}}">delete</button>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
